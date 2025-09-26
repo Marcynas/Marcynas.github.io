@@ -3,8 +3,9 @@ import { ref } from 'vue'
 import OrelisFullDemo from '@/components/OrelisFull-demo.vue'
 import NugEgFullDemo from '@/components/NugEgFull-demo.vue'
 import TikChatFullDemo from '@/components/TikChatFull-demo.vue'
+import UsefullToolsFullDemo from '@/components/UsefullToolsFull-demo.vue'
 
-const names = ref(['Orelis', 'Nugalėk egzaminą', 'TikChat'])
+const names = ref(['Nugalėk egzaminą','Orelis', 'Usefull tools' , 'TikChat'])
 const selectedName = ref(names.value[0])
 
 const nextName = () => {
@@ -143,6 +144,7 @@ window.addEventListener('resize', () => {
         <OrelisFullDemo v-if="selectedName === 'Orelis'" />
         <NugEgFullDemo v-else-if="selectedName === 'Nugalėk egzaminą'" />
         <TikChatFullDemo v-else-if="selectedName === 'TikChat'" />
+        <UsefullToolsFullDemo v-else-if="selectedName === 'Usefull tools'" />
         <div class="col-span-3 row-span-1 h-64 flex justify-center" v-else>
           <p class="text-5xl font-bold align-middle self-center animate-pulse">
             More comming soon...

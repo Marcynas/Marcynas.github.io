@@ -3,8 +3,9 @@ import { ref } from 'vue'
 import OrelisSmDemo from '@/components/OrelisSm-demo.vue'
 import NugEgSmDemo from '@/components/NugEgSm-demo.vue'
 import TikChatSmDemo from '@/components/TikChatSm-demo.vue'
+import UsefullToolsSmDemo from '@/components/UsefullToolsSm-demo.vue'
 
-const names = ref(['Orelis', 'Nugalėk egzaminą', 'TikChat'])
+const names = ref(['Nugalėk egzaminą', 'Orelis', 'TikChat', 'Usefull tools'])
 const selectedName = ref(names.value[0])
 
 const nextName = () => {
@@ -77,6 +78,7 @@ const prevName = () => {
       <OrelisSmDemo v-if="selectedName === 'Orelis'" />
       <NugEgSmDemo v-else-if="selectedName === 'Nugalėk egzaminą'" />
       <TikChatSmDemo v-else-if="selectedName === 'TikChat'" />
+      <UsefullToolsSmDemo v-else-if="selectedName === 'Usefull tools'" />
       <div class="col-span-3 row-span-1 h-64 flex justify-center" v-else>
         <p class="text-5xl font-bold align-middle self-center animate-pulse">
           More comming soon...
