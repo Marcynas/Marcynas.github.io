@@ -2,7 +2,7 @@
   <div
     class="lg:col-span-1 md:col-span-1 sm:col-span-3 row-span-3 h-full w-full p-4 flex flex-col justify-center align-middle"
   >
-    <h1 class="font-bold text-4xl mb-2">Usefull tools</h1>
+    <h1 class="font-bold text-4xl mb-2">Useful tools</h1>
     <p class="font-bold text-xl mb-2">A curated list of tools to make your life easier.</p>
     <p class="font-bold text-xl flex flex-row w-full align-center mt-4 mb-2">Built using:</p>
     <!--List-->
@@ -31,10 +31,10 @@
   <div class="lg:col-span-2 md:col-span-2 sm:col-span-3 row-span-3">
     <div class="flex w-full h-full justify-center items-center align-middle">
       <iframe
-        src="https://marcynas.github.io/usefull-tools/"
+        src="https://marcynas.github.io/useful-tools/"
         class="w-full h-full rounded-xl"
         scrolling="yes"
-        title="Nugalėk Egzaminą"
+        title="Useful tools"
       ></iframe>
     </div>
   </div>
